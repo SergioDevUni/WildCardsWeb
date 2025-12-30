@@ -1,0 +1,179 @@
+<!doctype html>
+<html class="dark" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>WildCards - Home Page - Feminine Palette Variant</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+            rel="stylesheet"
+        />
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            // Original palette for reference:
+                            // "primary": "#fb7185", "primary-hover": "#f43f5e", "primary-light": "#fda4af", "discord": "#5865F2",
+                            // "discord-dark": "#4752C4", "accent": "#fcd34d", "accent-dim": "#b45309",
+                            // "background-light": "#fff1f2", "background-dark": "#2b2430", "surface-dark": "#3a3140", "surface-darker": "#1d1821", "text-body": "#e7e5e4",
+                            // Feminine Palette Variant
+                            primary: "#ff708f", // Vibrant coral/berry pink
+                            "primary-hover": "#e95273",
+                            "primary-light": "#ff9baa",
+                            discord: "#7289DA", // Softer Discord blue
+                            "discord-dark": "#5865F2",
+                            accent: "#fcd34d", // Gold for general accent
+                            "accent-alt": "#d4af37", // Delicate gold
+                            "accent-text": "#fde68a", // Lighter gold for text
+                            "background-light": "#fef0f8", // Muted rose-grey light
+                            "background-dark": "#3c2e4f", // Elegant lavender dark
+                            "surface-dark": "#4f3f63", // Slightly lighter surface
+                            "surface-darker": "#2d2039", // Deepest background surface
+                            "text-heading": "#ffffff", // Clean white for titles
+                            "text-body": "#e0e0e0", // Gentle light grey for body text
+                            "text-light": "#f8e7f4", // Soft beige for very light text
+                        },
+                        fontFamily: {
+                            display: ["Space Grotesk", "sans-serif"],
+                        },
+                        borderRadius: {
+                            DEFAULT: "0.5rem",
+                            lg: "0.75rem",
+                            xl: "1rem",
+                            full: "9999px",
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            body {
+                font-family: "Space Grotesk", sans-serif;
+            }
+            .text-glow {
+                text-shadow: 0 0 30px rgba(255, 112, 143, 0.4);
+            }
+            .btn-glow:hover {
+                box-shadow: 0 0 25px rgba(255, 112, 143, 0.5);
+            }
+            ::selection {
+                background: #ff708f;
+                color: #1d1821;
+            }
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        </style>
+    </head>
+    <body class="min-h-screen bg-background text-foreground">
+        <div class="max-w-3xl mx-auto px-6 py-10">
+            <a href="index.html" class="text-sm hover:underline"
+                >← Back to WildCards</a
+            >
+            <h1 class="text-3xl font-bold mt-4">Privacy Policy</h1>
+            <p class="text-sm text-muted-foreground mt-2">
+                Last updated: 2025-12-29
+            </p>
+
+            <div class="mt-8 space-y-6 leading-relaxed text-sm">
+                <section>
+                    <p>
+                        We collect and process limited information to operate
+                        WildCards and provide support.
+                    </p>
+                </section>
+                <section>
+                    <h2 class="text-xl font-semibold">
+                        Information we collect
+                    </h2>
+                    <ul class="list-disc pl-5 mt-2 space-y-1">
+                        <li>
+                            Account identifiers needed to provide the service
+                            (e.g., Discord user/server identifiers).
+                        </li>
+                        <li>
+                            Purchase metadata required to deliver digital items
+                            and prevent fraud (e.g., Stripe payment
+                            identifiers).
+                        </li>
+                        <li>Support communications you send to us.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 class="text-xl font-semibold">
+                        How we use information
+                    </h2>
+                    <ul class="list-disc pl-5 mt-2 space-y-1">
+                        <li>
+                            Provide and maintain the service and deliver digital
+                            items.
+                        </li>
+                        <li>Prevent abuse, fraud, and chargebacks.</li>
+                        <li>Respond to support requests.</li>
+                        <li>Improve performance and reliability.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 class="text-xl font-semibold">Payments</h2>
+                    <p>
+                        Payments are processed by Stripe. We do not store full
+                        card numbers. Stripe may process information according
+                        to its policies.
+                    </p>
+                </section>
+                <section id="cookies">
+                    <h2 class="text-xl font-semibold">Cookies</h2>
+                    <p>
+                        If our website uses cookies or similar technologies,
+                        they are used for essential functionality and basic
+                        analytics. You can control cookies through your browser
+                        settings.
+                    </p>
+                </section>
+                <section>
+                    <h2 class="text-xl font-semibold">Data retention</h2>
+                    <p>
+                        We retain information only as long as needed for service
+                        operation, legal requirements, and fraud prevention.
+                    </p>
+                </section>
+                <section>
+                    <h2 class="text-xl font-semibold">Your choices</h2>
+                    <p>
+                        You may contact us to request access, correction, or
+                        deletion of personal information, subject to legal and
+                        operational requirements.
+                    </p>
+                </section>
+            </div>
+
+            <hr class="my-10 border-surface-dark/80" />
+            <div class="text-sm">
+                <p><strong>Support</strong></p>
+                <p>
+                    Email:
+                    <a
+                        class="hover:underline"
+                        href="mailto:sergioorav@gmail.com"
+                        >sergioorav@gmail.com</a
+                    >
+                </p>
+                <p>Phone: +52 55 3574 6547</p>
+            </div>
+            <p class="text-xs text-muted-foreground mt-6">
+                © 2025 WildCards. All rights reserved.
+            </p>
+        </div>
+    </body>
+</html>

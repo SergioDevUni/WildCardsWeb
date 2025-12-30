@@ -1,0 +1,1140 @@
+<!doctype html>
+
+<html class="dark" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>WildCards - Home Page - Feminine Palette Variant</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+            rel="stylesheet"
+        />
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            // Original palette for reference:
+                            // "primary": "#fb7185", "primary-hover": "#f43f5e", "primary-light": "#fda4af", "discord": "#5865F2",
+                            // "discord-dark": "#4752C4", "accent": "#fcd34d", "accent-dim": "#b45309",
+                            // "background-light": "#fff1f2", "background-dark": "#2b2430", "surface-dark": "#3a3140", "surface-darker": "#1d1821", "text-body": "#e7e5e4",
+                            // Feminine Palette Variant
+                            primary: "#ff708f", // Vibrant coral/berry pink
+                            "primary-hover": "#e95273",
+                            "primary-light": "#ff9baa",
+                            discord: "#7289DA", // Softer Discord blue
+                            "discord-dark": "#5865F2",
+                            accent: "#fcd34d", // Gold for general accent
+                            "accent-alt": "#d4af37", // Delicate gold
+                            "accent-text": "#fde68a", // Lighter gold for text
+                            "background-light": "#fef0f8", // Muted rose-grey light
+                            "background-dark": "#3c2e4f", // Elegant lavender dark
+                            "surface-dark": "#4f3f63", // Slightly lighter surface
+                            "surface-darker": "#2d2039", // Deepest background surface
+                            "text-heading": "#ffffff", // Clean white for titles
+                            "text-body": "#e0e0e0", // Gentle light grey for body text
+                            "text-light": "#f8e7f4", // Soft beige for very light text
+                        },
+                        fontFamily: {
+                            display: ["Space Grotesk", "sans-serif"],
+                        },
+                        borderRadius: {
+                            DEFAULT: "0.5rem",
+                            lg: "0.75rem",
+                            xl: "1rem",
+                            full: "9999px",
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            body {
+                font-family: "Space Grotesk", sans-serif;
+            }
+            .text-glow {
+                text-shadow: 0 0 30px rgba(255, 112, 143, 0.4);
+            }
+            .btn-glow:hover {
+                box-shadow: 0 0 25px rgba(255, 112, 143, 0.5);
+            }
+            ::selection {
+                background: #ff708f;
+                color: #1d1821;
+            }
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        </style>
+    </head>
+    <body
+        class="bg-background-light dark:bg-background-dark text-text-body overflow-x-hidden"
+    >
+        <div class="relative flex flex-col min-h-screen w-full">
+            <div class="fixed bottom-6 right-6 z-[60]">
+                <button
+                    class="btn-glow flex items-center gap-3 bg-primary hover:bg-primary-hover text-surface-darker pl-5 pr-6 py-4 rounded-full shadow-2xl shadow-primary/30 transition-all hover:scale-105 hover:-translate-y-1 border border-white/10 group"
+                >
+                    <span
+                        class="material-symbols-outlined text-2xl group-hover:rotate-90 transition-transform duration-300"
+                        >add_circle</span
+                    >
+                    <span class="font-bold text-lg tracking-wide"
+                        >Add to Server</span
+                    >
+                </button>
+            </div>
+            <header
+                class="sticky top-0 z-50 w-full border-b border-surface-dark/50 bg-background-dark/90 backdrop-blur-md px-4 sm:px-10 py-3"
+            >
+                <div
+                    class="mx-auto flex max-w-[1200px] items-center justify-between"
+                >
+                    <div class="flex items-center gap-3 text-white">
+                        <div
+                            class="flex items-center justify-center rounded-lg bg-primary/10 p-2 text-primary"
+                        >
+                            <span class="material-symbols-outlined filled"
+                                >playing_cards</span
+                            >
+                        </div>
+                        <h2
+                            class="text-text-heading text-xl font-bold leading-tight tracking-[-0.015em]"
+                        >
+                            WildCards
+                        </h2>
+                    </div>
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a
+                            class="text-text-body hover:text-text-heading text-sm font-medium transition-colors"
+                            href="#"
+                            >Wiki</a
+                        >
+                        <a
+                            class="text-text-body hover:text-text-heading text-sm font-medium transition-colors"
+                            href="#"
+                            >Community</a
+                        >
+                        <a
+                            class="text-text-body hover:text-text-heading text-sm font-medium transition-colors"
+                            href="#"
+                            >Store</a
+                        >
+                        <a
+                            class="text-text-body hover:text-text-heading text-sm font-medium transition-colors"
+                            href="#"
+                            >Leaderboard</a
+                        >
+                    </nav>
+                    <div class="flex items-center gap-3">
+                        <button
+                            class="hidden sm:flex items-center justify-center gap-2 rounded-lg bg-discord hover:bg-discord-dark h-9 px-5 text-white text-sm font-bold transition-all shadow-lg shadow-discord/20 border border-white/5"
+                        >
+                            <span class="material-symbols-outlined text-[18px]"
+                                >login</span
+                            >
+                            <span>Login with Discord</span>
+                        </button>
+                        <button
+                            class="md:hidden text-text-heading p-2 hover:bg-white/5 rounded-lg transition-colors"
+                        >
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <div
+                class="relative flex flex-col items-center justify-end min-h-screen w-full px-4 overflow-hidden pt-20"
+            >
+                <div
+                    class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+                    data-alt="Feminine hero character in an immersive fantasy setting"
+                    style="
+                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDaWVWTFvD2KdL4Gxtl0UqR3qWwai2foXBEx0PiNn2xf4h7fKDTJEFZlnhkwv8DsRUXiw5yWuLLD2SNNwIJepMBrLwgjAw4Fkevf7F9kklwahHuptczdGcpgt4OG3dbyyQe7U6OgNKQ2LFbrtKmu_Pw9u-sWX-A6b_2nC3gaQ68KSnDKllDieVUthXco646oWpy_zsl-1_ah79KW_E-coQHEaERiWi2wMWuD4nzwqv2v5kScA4OZXFA2ZU0Di7SZcu_RYLjLMeft0o&quot;);
+                        background-position: center bottom;
+                    "
+                >
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/50 to-transparent"
+                    ></div>
+                </div>
+                <div
+                    class="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto gap-8 pt-16 pb-12"
+                >
+                    <div
+                        class="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-surface-dark/80 px-4 py-1.5 backdrop-blur-sm shadow-[0_0_15px_rgba(255,112,143,0.2)]"
+                    >
+                        <span class="relative flex h-2 w-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"
+                            ></span>
+                            <span
+                                class="relative inline-flex rounded-full h-2 w-2 bg-primary"
+                            ></span>
+                        </span>
+                        <span
+                            class="text-xs font-medium text-pink-100 uppercase tracking-wider"
+                            >Void Realm Expansion Live Now</span
+                        >
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <h1
+                            class="text-glow text-text-heading text-5xl md:text-8xl font-black leading-[1] tracking-[-0.03em]"
+                        >
+                            Unleash Your<br /><span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-primary-light via-primary to-primary-light"
+                                >Inner Heroine.</span
+                            >
+                        </h1>
+                        <p
+                            class="text-text-light text-lg md:text-2xl font-light max-w-2xl mx-auto leading-relaxed"
+                        >
+                            Craft your saga, gather allies, and conquer mythical
+                            realms from your Discord server.
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col sm:flex-row gap-5 justify-center items-center mt-6 w-full sm:w-auto"
+                    >
+                        <button
+                            class="group flex items-center justify-center gap-3 rounded-xl bg-primary/40 border border-primary/30 text-pink-100 hover:bg-primary/60 hover:border-primary/50 h-14 px-8 text-base font-bold transition-all hover:-translate-y-1 shadow-[0_0_20px_rgba(255,112,143,0.1)]"
+                        >
+                            <span class="material-symbols-outlined"
+                                >rocket_launch</span
+                            >
+                            <span>Start Playing</span>
+                        </button>
+                        <button
+                            class="relative overflow-hidden group flex items-center justify-center gap-3 rounded-xl bg-primary hover:bg-primary-hover h-[4.5rem] px-12 text-surface-darker text-xl font-bold transition-all duration-300 hover:scale-105 hover:-translate-y-1 shadow-[0_0_40px_rgba(255,112,143,0.3)] border border-primary-light/30"
+                        >
+                            <div
+                                class="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/25 to-transparent -translate-x-[150%] group-hover:translate-x-[150%] transition-transform duration-700 ease-in-out"
+                            ></div>
+                            <span
+                                class="material-symbols-outlined text-3xl animate-bounce"
+                                >add_circle</span
+                            >
+                            <span>Add to Server</span>
+                        </button>
+                    </div>
+                    <div class="mt-12 w-full max-w-sm">
+                        <div
+                            class="flex flex-col gap-3 p-5 rounded-2xl bg-surface-dark/80 border border-surface-dark/30 backdrop-blur-md shadow-2xl"
+                        >
+                            <div
+                                class="flex items-center justify-between text-xs text-text-light uppercase tracking-wider font-medium"
+                            >
+                                <span>Already Playing?</span>
+                                <span class="flex items-center gap-1"
+                                    ><span
+                                        class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"
+                                    ></span>
+                                    Systems Online</span
+                                >
+                            </div>
+                            <button
+                                class="flex items-center justify-center gap-3 w-full rounded-lg bg-discord hover:bg-discord-dark h-12 text-white font-bold transition-colors shadow-lg shadow-discord/20"
+                            >
+                                <span class="material-symbols-outlined"
+                                    >login</span
+                                >
+                                <span>Login with Discord</span>
+                            </button>
+                            <p class="text-[10px] text-text-body">
+                                Secure authentication via Discord OAuth2
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="border-y border-surface-dark/80 bg-surface-darker py-10"
+            >
+                <div class="mx-auto max-w-[1200px] px-4">
+                    <div
+                        class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center"
+                    >
+                        <div
+                            class="flex flex-col gap-1 items-center justify-center p-4 rounded-xl bg-surface-dark/50 border border-primary/20 bg-gradient-to-br from-primary/10 to-transparent shadow-inner"
+                        >
+                            <p
+                                class="text-3xl font-bold text-text-heading tracking-tight"
+                            >
+                                1.2M+
+                            </p>
+                            <p
+                                class="text-xs text-text-light font-medium uppercase tracking-wider"
+                            >
+                                Cards Collected
+                            </p>
+                        </div>
+                        <div
+                            class="flex flex-col gap-1 items-center justify-center p-4 rounded-xl bg-surface-dark/50 border border-accent-alt/20 bg-gradient-to-br from-accent-alt/10 to-transparent shadow-inner"
+                        >
+                            <p
+                                class="text-3xl font-bold text-text-heading tracking-tight"
+                            >
+                                450k+
+                            </p>
+                            <p
+                                class="text-xs text-text-light font-medium uppercase tracking-wider"
+                            >
+                                Battles Won
+                            </p>
+                        </div>
+                        <div
+                            class="flex flex-col gap-1 items-center justify-center p-4 rounded-xl bg-surface-dark/50 border border-primary/20 bg-gradient-to-br from-primary/10 to-transparent shadow-inner"
+                        >
+                            <p
+                                class="text-3xl font-bold text-text-heading tracking-tight"
+                            >
+                                85k
+                            </p>
+                            <p
+                                class="text-xs text-text-light font-medium uppercase tracking-wider"
+                            >
+                                Active Players
+                            </p>
+                        </div>
+                        <div
+                            class="flex flex-col gap-1 items-center justify-center p-4 rounded-xl bg-surface-dark/50 border border-accent-alt/20 bg-gradient-to-br from-accent-alt/10 to-transparent shadow-inner"
+                        >
+                            <p
+                                class="text-3xl font-bold text-text-heading tracking-tight"
+                            >
+                                3,200
+                            </p>
+                            <p
+                                class="text-xs text-text-light font-medium uppercase tracking-wider"
+                            >
+                                Guilds Created
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-24 px-4 bg-background-dark">
+                <div class="mx-auto max-w-[1200px] flex flex-col gap-16">
+                    <div
+                        class="text-center max-w-2xl mx-auto flex flex-col gap-4"
+                    >
+                        <h2
+                            class="text-text-heading text-3xl md:text-4xl font-bold leading-tight"
+                        >
+                            Game Features
+                        </h2>
+                        <p class="text-text-body text-lg font-light">
+                            Experience the next generation of Discord gaming
+                            with deep mechanics and social play.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div
+                            class="group relative overflow-hidden rounded-2xl border border-primary/30 bg-surface-dark/60 p-8 transition-all hover:border-primary/60 hover:bg-surface-dark/80 hover:shadow-lg hover:shadow-primary/10"
+                        >
+                            <div
+                                class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary group-hover:scale-110 transition-transform"
+                            >
+                                <span class="material-symbols-outlined text-2xl"
+                                    >style</span
+                                >
+                            </div>
+                            <h3
+                                class="mb-3 text-xl font-bold text-text-heading group-hover:text-primary transition-colors"
+                            >
+                                Gacha Summoning
+                            </h3>
+                            <p class="text-text-body leading-relaxed text-sm">
+                                Over 500+ Unique Cards with varying rarities.
+                                Pull your favorites, upgrade their stats, and
+                                build the ultimate deck composition.
+                            </p>
+                        </div>
+                        <div
+                            class="group relative overflow-hidden rounded-2xl border border-accent-alt/30 bg-surface-dark/60 p-8 transition-all hover:border-accent-alt/60 hover:bg-surface-dark/80 hover:shadow-lg hover:shadow-accent-alt/10"
+                        >
+                            <div
+                                class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-accent-alt/20 text-accent-alt group-hover:scale-110 transition-transform"
+                            >
+                                <span class="material-symbols-outlined text-2xl"
+                                    >swords</span
+                                >
+                            </div>
+                            <h3
+                                class="mb-3 text-xl font-bold text-text-heading group-hover:text-accent-alt transition-colors"
+                            >
+                                Turn-Based Combat
+                            </h3>
+                            <p class="text-text-body leading-relaxed text-sm">
+                                Strategic Turn-Based Battles where element and
+                                positioning matter. Synergize your team's
+                                abilities to defeat epic raid bosses.
+                            </p>
+                        </div>
+                        <div
+                            class="group relative overflow-hidden rounded-2xl border border-primary/30 bg-surface-dark/60 p-8 transition-all hover:border-primary/60 hover:bg-surface-dark/80 hover:shadow-lg hover:shadow-primary/10"
+                        >
+                            <div
+                                class="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/20 text-primary group-hover:scale-110 transition-transform"
+                            >
+                                <span class="material-symbols-outlined text-2xl"
+                                    >groups</span
+                                >
+                            </div>
+                            <h3
+                                class="mb-3 text-xl font-bold text-text-heading group-hover:text-primary transition-colors"
+                            >
+                                MMO Guilds
+                            </h3>
+                            <p class="text-text-body leading-relaxed text-sm">
+                                A true MMO Experience within Discord. Join
+                                guilds, trade cards with friends, participate in
+                                wars, and climb the global leaderboards.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="py-24 px-4 bg-surface-darker border-t border-surface-dark/80"
+            >
+                <div
+                    class="mx-auto max-w-[1200px] flex flex-col lg:flex-row gap-16 items-center"
+                >
+                    <div class="w-full lg:w-1/2 flex flex-col gap-6">
+                        <h2
+                            class="text-text-heading text-4xl md:text-5xl font-bold leading-tight"
+                        >
+                            Incredible <br />
+                            <span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-light to-accent-alt"
+                                >Commands</span
+                            >
+                        </h2>
+                        <p
+                            class="text-text-body text-lg font-light leading-relaxed"
+                        >
+                            Experience seamless gameplay directly in your
+                            Discord chat. With over 200 interactive commands,
+                            WildCards brings the full RPG experience to your
+                            server, from summoning heroes and checking inventory
+                            to challenging raid bosses and upgrading gear, all
+                            without any external downloads. Dive into a world
+                            where every action is just a slash command away,
+                            ensuring an intuitive and engaging adventure.
+                        </p>
+                        <div class="flex flex-col gap-3 mt-4">
+                            <div
+                                class="flex items-center gap-3 p-3 rounded-lg bg-surface-dark/40 border border-primary/10"
+                            >
+                                <span
+                                    class="material-symbols-outlined text-primary"
+                                    >terminal</span
+                                >
+                                <span
+                                    class="text-sm font-medium text-text-light"
+                                    >Responsive slash commands</span
+                                >
+                            </div>
+                            <div
+                                class="flex items-center gap-3 p-3 rounded-lg bg-surface-dark/40 border border-primary/10"
+                            >
+                                <span
+                                    class="material-symbols-outlined text-accent-alt"
+                                    >image</span
+                                >
+                                <span
+                                    class="text-sm font-medium text-text-light"
+                                    >Rich media embeds &amp; interactions</span
+                                >
+                            </div>
+                            <div
+                                class="flex items-center gap-3 p-3 rounded-lg bg-surface-dark/40 border border-primary/10"
+                            >
+                                <span
+                                    class="material-symbols-outlined text-primary-light"
+                                    >bolt</span
+                                >
+                                <span
+                                    class="text-sm font-medium text-text-light"
+                                    >Instant real-time battle feedback</span
+                                >
+                            </div>
+                        </div>
+                        <button
+                            class="mt-4 w-fit px-6 py-3 rounded-lg bg-surface-dark border border-primary/30 text-text-heading font-medium hover:bg-surface-dark/80 hover:border-primary/60 transition-all flex items-center gap-2"
+                        >
+                            <span>Explore All Commands</span>
+                            <span class="material-symbols-outlined text-sm"
+                                >arrow_forward</span
+                            >
+                        </button>
+                    </div>
+                    <div
+                        class="w-full lg:w-1/2 relative grid grid-cols-2 gap-4 p-4 rounded-xl bg-surface-dark/60 border border-surface-dark/50 shadow-2xl shadow-primary/10"
+                    >
+                        <div
+                            class="relative overflow-hidden rounded-lg bg-[#313338] shadow-md border border-primary/20"
+                        >
+                            <div class="p-3 flex items-start gap-3">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white text-sm shrink-0"
+                                >
+                                    <span
+                                        class="material-symbols-outlined text-[16px]"
+                                        >playing_cards</span
+                                    >
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center gap-1 mb-0.5">
+                                        <span
+                                            class="font-medium text-white text-xs"
+                                            >WildCards</span
+                                        >
+                                        <span
+                                            class="px-1 py-0.5 rounded text-[8px] font-bold bg-[#5865F2] text-white uppercase flex items-center"
+                                        >
+                                            <span
+                                                class="material-symbols-outlined text-[8px]"
+                                                >check</span
+                                            >
+                                            APP
+                                        </span>
+                                        <span
+                                            class="text-[9px] text-gray-400 ml-0.5"
+                                            >8:42 PM</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="text-gray-300 text-[11px] leading-tight mb-1"
+                                    >
+                                        <span
+                                            class="text-primary-light font-medium"
+                                            >@PlayerOne</span
+                                        >
+                                        summoned! ✨
+                                    </div>
+                                    <div
+                                        class="border-l-2 border-primary bg-[#2b2d31] rounded-r-sm p-2 text-[10px] grid gap-1"
+                                    >
+                                        <div
+                                            class="flex justify-between items-start"
+                                        >
+                                            <div>
+                                                <h4
+                                                    class="font-bold text-white text-xs"
+                                                >
+                                                    Legendary Summon
+                                                </h4>
+                                                <p
+                                                    class="text-[9px] text-gray-400"
+                                                >
+                                                    Character added.
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="text-accent-alt text-[8px] font-bold border border-accent-alt/30 bg-accent-alt/10 px-1 py-0.5 rounded uppercase"
+                                            >
+                                                Success
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="relative w-full aspect-[4/3] rounded-sm overflow-hidden bg-surface-darker"
+                                        >
+                                            <div
+                                                class="absolute inset-0 bg-cover bg-center"
+                                                style="
+                                                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDaWVWTFvD2KdL4Gxtl0UqR3qWwai2foXBEx0PiNn2xf4h7fKDTJEFZlnhkwv8DsRUXiw5yWuLLD2SNNwIJepMBrLwgjAw4Fkevf7F9kklwahHuptczdGcpgt4OG3dbyyQe7U6OgNKQ2LFbrtKmu_Pw9u-sWX-A6b_2nC3gaQ68KSnDKllDieVUthXco646oWpy_zsl-1_ah79KW_E-coQHEaERiWi2wMWuD4nzwqv2v5kScA4OZXFA2ZU0Di7SZcu_RYLjLMeft0o&quot;);
+                                                "
+                                            ></div>
+                                            <div
+                                                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-1"
+                                            >
+                                                <p
+                                                    class="text-white font-bold text-[9px]"
+                                                >
+                                                    Aeliana
+                                                </p>
+                                                <p
+                                                    class="text-gray-300 text-[8px]"
+                                                >
+                                                    ★★★★★ Light Warrior
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap gap-1 mt-1">
+                                        <button
+                                            class="bg-[#5865F2] text-white px-2 py-1 rounded text-[9px] font-medium"
+                                        >
+                                            Stats
+                                        </button>
+                                        <button
+                                            class="bg-[#4e5058] text-white px-2 py-1 rounded text-[9px] font-medium"
+                                        >
+                                            Equip
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="relative overflow-hidden rounded-lg bg-[#313338] shadow-md border border-accent-alt/20"
+                        >
+                            <div class="p-3 flex items-start gap-3">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-accent-alt flex items-center justify-center text-white text-sm shrink-0"
+                                >
+                                    <span
+                                        class="material-symbols-outlined text-[16px]"
+                                        >swords</span
+                                    >
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center gap-1 mb-0.5">
+                                        <span
+                                            class="font-medium text-white text-xs"
+                                            >WildCards</span
+                                        >
+                                        <span
+                                            class="px-1 py-0.5 rounded text-[8px] font-bold bg-[#5865F2] text-white uppercase flex items-center"
+                                        >
+                                            <span
+                                                class="material-symbols-outlined text-[8px]"
+                                                >check</span
+                                            >
+                                            APP
+                                        </span>
+                                        <span
+                                            class="text-[9px] text-gray-400 ml-0.5"
+                                            >8:50 PM</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="text-gray-300 text-[11px] leading-tight mb-1"
+                                    >
+                                        <span
+                                            class="text-primary-light font-medium"
+                                            >@PlayerTwo</span
+                                        >
+                                        engaged a monster! ⚔️
+                                    </div>
+                                    <div
+                                        class="border-l-2 border-accent-alt bg-[#2b2d31] rounded-r-sm p-2 text-[10px] grid gap-1"
+                                    >
+                                        <div
+                                            class="flex justify-between items-start"
+                                        >
+                                            <div>
+                                                <h4
+                                                    class="font-bold text-white text-xs"
+                                                >
+                                                    Battle Report
+                                                </h4>
+                                                <p
+                                                    class="text-[9px] text-gray-400"
+                                                >
+                                                    Victory against Goblin King!
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="text-primary text-[8px] font-bold border border-primary/30 bg-primary/10 px-1 py-0.5 rounded uppercase"
+                                            >
+                                                Win
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="relative w-full aspect-[4/3] rounded-sm overflow-hidden bg-surface-darker"
+                                        >
+                                            <div
+                                                class="absolute inset-0 bg-cover bg-center"
+                                                style="
+                                                    background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCGpLQ2Za2AyoZgc4qCuRLTwNFVrz7J-zHurNbQ81BCq8FGgTMtKhfRNph9A_Mh9ek_LX9Fg85xM9Ebxv36fAJ6lZ2ZQakFgq6Li4BszgVEcfDAyiJvvt62frze39xHE1WJT5hWQ6GuXUZXadEPnMGad1-9bN3RnlIDas7piJvwIWC9O2neyclbI-hnQeQu2n02MfzhqlvRZNyzmwT8sgoXWhQCjBwJ8tCtio4cUB_GW3eOpzlx4LlHakzdI9LKb2kyFUUHH1qkKJU&quot;);
+                                                "
+                                            ></div>
+                                            <div
+                                                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-1"
+                                            >
+                                                <p
+                                                    class="text-white font-bold text-[9px]"
+                                                >
+                                                    Goblin King
+                                                </p>
+                                                <p
+                                                    class="text-gray-300 text-[8px]"
+                                                >
+                                                    Defeated! +500 XP
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap gap-1 mt-1">
+                                        <button
+                                            class="bg-[#5865F2] text-white px-2 py-1 rounded text-[9px] font-medium"
+                                        >
+                                            Rewards
+                                        </button>
+                                        <button
+                                            class="bg-[#4e5058] text-white px-2 py-1 rounded text-[9px] font-medium"
+                                        >
+                                            Next Battle
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="relative overflow-hidden rounded-lg bg-[#313338] shadow-md border border-primary-light/20"
+                        >
+                            <div class="p-3 flex items-start gap-3">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-primary-light flex items-center justify-center text-surface-darker text-sm shrink-0"
+                                >
+                                    <span
+                                        class="material-symbols-outlined text-[16px]"
+                                        >inventory_2</span
+                                    >
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center gap-1 mb-0.5">
+                                        <span
+                                            class="font-medium text-white text-xs"
+                                            >WildCards</span
+                                        >
+                                        <span
+                                            class="px-1 py-0.5 rounded text-[8px] font-bold bg-[#5865F2] text-white uppercase flex items-center"
+                                        >
+                                            <span
+                                                class="material-symbols-outlined text-[8px]"
+                                                >check</span
+                                            >
+                                            APP
+                                        </span>
+                                        <span
+                                            class="text-[9px] text-gray-400 ml-0.5"
+                                            >9:05 PM</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="text-gray-300 text-[11px] leading-tight mb-1"
+                                    >
+                                        <span
+                                            class="text-primary-light font-medium"
+                                            >@PlayerOne</span
+                                        >
+                                        checked inventory! 🎒
+                                    </div>
+                                    <div
+                                        class="border-l-2 border-primary-light bg-[#2b2d31] rounded-r-sm p-2 text-[10px] grid gap-1"
+                                    >
+                                        <div
+                                            class="flex justify-between items-start"
+                                        >
+                                            <div>
+                                                <h4
+                                                    class="font-bold text-white text-xs"
+                                                >
+                                                    Inventory Summary
+                                                </h4>
+                                                <p
+                                                    class="text-[9px] text-gray-400"
+                                                >
+                                                    You have 3 rare items.
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="text-text-light text-[8px] font-bold border border-text-light/30 bg-text-light/10 px-1 py-0.5 rounded uppercase"
+                                            >
+                                                Info
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="grid grid-cols-3 gap-1 mt-1"
+                                        >
+                                            <div
+                                                class="flex flex-col items-center bg-surface-dark/40 p-1 rounded-sm border border-primary/10"
+                                            >
+                                                <img
+                                                    alt="Item: Mystic Orb"
+                                                    class="w-8 h-8 object-cover rounded-sm mb-0.5"
+                                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL2yQfgIgubl-WfzcjJjwBptEu4wyLYwxMUkUNIJhJxMs294cwTBrTQIUqVXStsbXQShHEBojIFxbeLmcrNhHkIGIqoOyKl2325GFIYHXAuTJFUR7W9t3urjUejARvpjpe4HONL--rO7OtJeOCcK3WuCTU7QEsYrCjqHdNfdNE_snqbOhiELO0vhGP94hW2iy3EIqh_N4XLLqf4E6tSVhD2_mXah-i1no8CFTrbaBTRcWEOlY5291aEwe2_6wQ3V2onqbaOT8I9i8"
+                                                />
+                                                <span
+                                                    class="text-white text-[9px] font-medium"
+                                                    >Mystic Orb</span
+                                                >
+                                                <span
+                                                    class="text-gray-400 text-[8px]"
+                                                    >x1</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="flex flex-col items-center bg-surface-dark/40 p-1 rounded-sm border border-accent-alt/10"
+                                            >
+                                                <img
+                                                    alt="Item: Golden Key"
+                                                    class="w-8 h-8 object-cover rounded-sm mb-0.5"
+                                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0id98aXA6h2v3QW6ZmlkE1o3GgYBt-kK5RSdTlwPDZ7-PzLZ3g8ytAWjBnwyZBMxZw4x3bEYtcZJ5dvs5eGD9cQQZ0YNNAO9mmY5vla1-3O3wkGF5vn4TGb2GFRH3SHFtUPCf3KXTdIDZ9r0NkyQ2hY3dTevC5SNr2FBAOXOsxeVvB8Kl3tvUcfwWlT65ZfSR90xrC8EF_rZa4RaOcmAz55fRhOoaf890TSbMJ_5DqJ8PnPcnzARvZa0GV77fo81A_cFaqPRoGpw"
+                                                />
+                                                <span
+                                                    class="text-white text-[9px] font-medium"
+                                                    >Golden Key</span
+                                                >
+                                                <span
+                                                    class="text-gray-400 text-[8px]"
+                                                    >x3</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="flex flex-col items-center bg-surface-dark/40 p-1 rounded-sm border border-primary/10"
+                                            >
+                                                <img
+                                                    alt="Item: Potion of Vigor"
+                                                    class="w-8 h-8 object-cover rounded-sm mb-0.5"
+                                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa74xHJHyCYD8WrM5sJ9_bPWSIUTRIG7776y0zj0RTYUi8lmzLBjAwZdYHvcFeVLvWhWY1ZzLfj5l4ecpj6lduhNYnPACRbg5PBUfpJupb3RMyiM75-cHsh3uclNc9QB6GRrlafAQHoS5IoEFbAw4TuAtLV2muGCdZrYtjcgkHbeRwj1j09g5DRS4_kOVRw7AVOxGqn4B4am7gCxXyHt-vxgFvzFoPX_Gec-hwVFdYKSAqVl3Iz54WncIHd96nsW_ATv7Dg2nA9DQ"
+                                                />
+                                                <span
+                                                    class="text-white text-[9px] font-medium"
+                                                    >Potion</span
+                                                >
+                                                <span
+                                                    class="text-gray-400 text-[8px]"
+                                                    >x5</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap gap-1 mt-1">
+                                        <button
+                                            class="bg-[#5865F2] text-white px-2 py-1 rounded text-[9px] font-medium"
+                                        >
+                                            Use Item
+                                        </button>
+                                        <button
+                                            class="bg-[#4e5058] text-white px-2 py-1 rounded text-[9px] font-medium"
+                                        >
+                                            Sell
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="relative overflow-hidden rounded-lg bg-[#313338] shadow-md border border-primary/20"
+                        >
+                            <div class="p-3 flex items-start gap-3">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white text-sm shrink-0"
+                                >
+                                    <span
+                                        class="material-symbols-outlined text-[16px]"
+                                        >groups</span
+                                    >
+                                </div>
+                                <div class="flex-1 min-w-0">
+                                    <div class="flex items-center gap-1 mb-0.5">
+                                        <span
+                                            class="font-medium text-white text-xs"
+                                            >WildCards</span
+                                        >
+                                        <span
+                                            class="px-1 py-0.5 rounded text-[8px] font-bold bg-[#5865F2] text-white uppercase flex items-center"
+                                        >
+                                            <span
+                                                class="material-symbols-outlined text-[8px]"
+                                                >check</span
+                                            >
+                                            APP
+                                        </span>
+                                        <span
+                                            class="text-[9px] text-gray-400 ml-0.5"
+                                            >9:15 PM</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="text-gray-300 text-[11px] leading-tight mb-1"
+                                    >
+                                        <span
+                                            class="text-primary-light font-medium"
+                                            >@PlayerThree</span
+                                        >
+                                        checked guild status! 🏰
+                                    </div>
+                                    <div
+                                        class="border-l-2 border-primary bg-[#2b2d31] rounded-r-sm p-2 text-[10px] grid gap-1"
+                                    >
+                                        <div
+                                            class="flex justify-between items-start"
+                                        >
+                                            <div>
+                                                <h4
+                                                    class="font-bold text-white text-xs"
+                                                >
+                                                    Guild: Radiant Guardians
+                                                </h4>
+                                                <p
+                                                    class="text-[9px] text-gray-400"
+                                                >
+                                                    Rank: #12, Members: 48/50
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="text-primary text-[8px] font-bold border border-primary/30 bg-primary/10 px-1 py-0.5 rounded uppercase"
+                                            >
+                                                Active
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex items-center gap-2 mt-1"
+                                        >
+                                            <div
+                                                class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center"
+                                            >
+                                                <span
+                                                    class="material-symbols-outlined text-primary text-[16px]"
+                                                    >trophy</span
+                                                >
+                                            </div>
+                                            <div class="flex-1">
+                                                <p
+                                                    class="text-white text-[9px] font-medium"
+                                                >
+                                                    Guild Treasury:
+                                                </p>
+                                                <p
+                                                    class="text-accent-alt text-[9px] font-bold"
+                                                >
+                                                    12,500 Gold
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex items-center gap-2 mt-1"
+                                        >
+                                            <div
+                                                class="w-8 h-8 rounded-full bg-accent-alt/20 flex items-center justify-center"
+                                            >
+                                                <span
+                                                    class="material-symbols-outlined text-accent-alt text-[16px]"
+                                                    >shield</span
+                                                >
+                                            </div>
+                                            <div class="flex-1">
+                                                <p
+                                                    class="text-white text-[9px] font-medium"
+                                                >
+                                                    Next War:
+                                                </p>
+                                                <p
+                                                    class="text-gray-300 text-[9px]"
+                                                >
+                                                    In 2 days
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-wrap gap-1 mt-1">
+                                        <button
+                                            class="bg-[#5865F2] text-white px-2 py-1 rounded text-[9px] font-medium"
+                                        >
+                                            View Roster
+                                        </button>
+                                        <button
+                                            class="bg-[#4e5058] text-white px-2 py-1 rounded text-[9px] font-medium"
+                                        >
+                                            Donate
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="relative py-24 px-4 overflow-hidden border-t border-surface-dark/80"
+        >
+            <div class="absolute inset-0 bg-primary/10"></div>
+            <div
+                class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"
+            ></div>
+            <div
+                class="relative z-10 mx-auto max-w-4xl text-center flex flex-col items-center gap-8"
+            >
+                <h2
+                    class="text-text-heading text-4xl md:text-5xl font-black tracking-tight"
+                >
+                    Ready to start?
+                </h2>
+                <p class="text-xl text-text-body max-w-2xl font-light">
+                    Join over 85,000 active players and start building your
+                    legacy today.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button
+                        class="btn-glow flex items-center justify-center gap-3 rounded-lg bg-primary hover:bg-primary-hover h-14 px-8 text-surface-darker text-lg font-bold transition-transform hover:scale-105 shadow-lg shadow-primary/20"
+                    >
+                        <span class="material-symbols-outlined"
+                            >add_to_queue</span
+                        >
+                        <span>Add Bot to Server</span>
+                    </button>
+                    <button
+                        class="flex items-center justify-center gap-3 rounded-lg bg-surface-dark hover:bg-surface-darker h-14 px-8 text-text-heading text-lg font-bold transition-transform hover:scale-105 border border-surface-dark/80"
+                    >
+                        <span class="material-symbols-outlined">login</span>
+                        <span>Login</span>
+                    </button>
+                </div>
+                <p class="text-sm text-text-body mt-2">
+                    No download required. Runs entirely on Discord.
+                </p>
+            </div>
+        </div>
+        <footer
+            class="border-t border-surface-dark/80 bg-surface-darker py-12 px-4"
+        >
+            <div class="mx-auto max-w-[1200px]">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+                    <div class="md:col-span-1">
+                        <div
+                            class="flex items-center gap-2 mb-4 text-text-heading"
+                        >
+                            <span class="material-symbols-outlined text-primary"
+                                >playing_cards</span
+                            >
+                            <span class="text-xl font-bold">WildCards</span>
+                        </div>
+                        <p class="text-text-body text-sm leading-relaxed">
+                            The ultimate Discord RPG experience. Collect,
+                            battle, and dominate in a persistent world.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-text-heading font-bold mb-4">
+                            Resources
+                        </h4>
+                        <ul class="flex flex-col gap-2 text-sm text-text-body">
+                            <li>
+                                <a
+                                    class="hover:text-primary transition-colors"
+                                    href="#"
+                                    >Wiki &amp; Guides</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="hover:text-primary transition-colors"
+                                    href="#"
+                                    >Card Database</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="hover:text-primary transition-colors"
+                                    href="#"
+                                    >Server Status</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="hover:text-primary transition-colors"
+                                    href="mailto:sergioorav@gmail.com"
+                                    >Support</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-text-heading font-bold mb-4">
+                            Community
+                        </h4>
+                        <ul class="flex flex-col gap-2 text-sm text-text-body">
+                            <li>
+                                <a
+                                    class="hover:text-primary transition-colors"
+                                    href="#"
+                                    >Official Discord</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="hover:text-primary transition-colors"
+                                    href="#"
+                                    >Twitter / X</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="hover:text-primary transition-colors"
+                                    href="#"
+                                    >Reddit</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="hover:text-primary transition-colors"
+                                    href="#"
+                                    >YouTube</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-text-heading font-bold mb-4">Legal</h4>
+                        <ul class="flex flex-col gap-2 text-sm text-text-body">
+                            <li>
+                                <a
+                                    class="hover:text-primary transition-colors"
+                                    href="privacy.html"
+                                    >Privacy Policy</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="hover:text-primary transition-colors"
+                                    href="terms.html"
+                                    >Terms of Service</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="hover:text-primary transition-colors"
+                                    href="privacy.html#cookies"
+                                    >Cookie Policy</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    class="hover:text-primary transition-colors"
+                                    href="refund.html"
+                                    >Refund Policy</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="border-t border-surface-dark/80 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-text-body"
+                >
+                    <p>© 2024 WildCards RPG. All rights reserved.</p>
+                    <p class="text-xs text-muted-foreground mt-2">
+                        Support: sergioorav@gmail.com • +52 55 3574 6547
+                    </p>
+                    <p>Not affiliated with Discord Inc.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,174 @@
+<!doctype html>
+<html class="dark" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>WildCards - Home Page - Feminine Palette Variant</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+            rel="stylesheet"
+        />
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            // Original palette for reference:
+                            // "primary": "#fb7185", "primary-hover": "#f43f5e", "primary-light": "#fda4af", "discord": "#5865F2",
+                            // "discord-dark": "#4752C4", "accent": "#fcd34d", "accent-dim": "#b45309",
+                            // "background-light": "#fff1f2", "background-dark": "#2b2430", "surface-dark": "#3a3140", "surface-darker": "#1d1821", "text-body": "#e7e5e4",
+                            // Feminine Palette Variant
+                            primary: "#ff708f", // Vibrant coral/berry pink
+                            "primary-hover": "#e95273",
+                            "primary-light": "#ff9baa",
+                            discord: "#7289DA", // Softer Discord blue
+                            "discord-dark": "#5865F2",
+                            accent: "#fcd34d", // Gold for general accent
+                            "accent-alt": "#d4af37", // Delicate gold
+                            "accent-text": "#fde68a", // Lighter gold for text
+                            "background-light": "#fef0f8", // Muted rose-grey light
+                            "background-dark": "#3c2e4f", // Elegant lavender dark
+                            "surface-dark": "#4f3f63", // Slightly lighter surface
+                            "surface-darker": "#2d2039", // Deepest background surface
+                            "text-heading": "#ffffff", // Clean white for titles
+                            "text-body": "#e0e0e0", // Gentle light grey for body text
+                            "text-light": "#f8e7f4", // Soft beige for very light text
+                        },
+                        fontFamily: {
+                            display: ["Space Grotesk", "sans-serif"],
+                        },
+                        borderRadius: {
+                            DEFAULT: "0.5rem",
+                            lg: "0.75rem",
+                            xl: "1rem",
+                            full: "9999px",
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            body {
+                font-family: "Space Grotesk", sans-serif;
+            }
+            .text-glow {
+                text-shadow: 0 0 30px rgba(255, 112, 143, 0.4);
+            }
+            .btn-glow:hover {
+                box-shadow: 0 0 25px rgba(255, 112, 143, 0.5);
+            }
+            ::selection {
+                background: #ff708f;
+                color: #1d1821;
+            }
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        </style>
+    </head>
+    <body class="min-h-screen bg-background text-foreground">
+        <div class="max-w-3xl mx-auto px-6 py-10">
+            <a href="index.html" class="text-sm hover:underline"
+                >← Back to WildCards</a
+            >
+            <h1 class="text-3xl font-bold mt-4">Terms of Service</h1>
+            <p class="text-sm text-muted-foreground mt-2">
+                Last updated: 2025-12-29
+            </p>
+
+            <div class="mt-8 space-y-6 leading-relaxed text-sm">
+                <section>
+                    <p>
+                        These Terms govern your access to and use of WildCards.
+                        By using the service, you agree to these Terms.
+                    </p>
+                </section>
+                <section>
+                    <h2 class="text-xl font-semibold">Digital items</h2>
+                    <p>
+                        Purchases are for digital items and features delivered
+                        electronically for use within WildCards. No physical
+                        goods are shipped.
+                    </p>
+                </section>
+                <section>
+                    <h2 class="text-xl font-semibold">
+                        Eligibility and accounts
+                    </h2>
+                    <p>
+                        You must comply with Discord’s terms and policies and
+                        use the service lawfully. You are responsible for
+                        activity on your account.
+                    </p>
+                </section>
+                <section>
+                    <h2 class="text-xl font-semibold">Acceptable use</h2>
+                    <ul class="list-disc pl-5 mt-2 space-y-1">
+                        <li>
+                            Do not abuse, exploit, or attempt to disrupt the
+                            service.
+                        </li>
+                        <li>
+                            Do not attempt unauthorized access to systems or
+                            data.
+                        </li>
+                        <li>Do not use the service for illegal activities.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 class="text-xl font-semibold">Payments and disputes</h2>
+                    <p>
+                        All payments are handled by Stripe. If a payment is
+                        refunded or reversed (including via dispute/chargeback),
+                        we may revoke associated digital items or access.
+                    </p>
+                </section>
+                <section>
+                    <h2 class="text-xl font-semibold">
+                        Changes and termination
+                    </h2>
+                    <p>
+                        We may update the service or these Terms over time. We
+                        may suspend or terminate access for abuse, fraud, or
+                        policy violations.
+                    </p>
+                </section>
+                <section>
+                    <h2 class="text-xl font-semibold">Disclaimer</h2>
+                    <p>
+                        The service is provided “as is” without warranties. To
+                        the maximum extent permitted by law, we are not liable
+                        for indirect or consequential damages.
+                    </p>
+                </section>
+            </div>
+
+            <hr class="my-10 border-surface-dark/80" />
+            <div class="text-sm">
+                <p><strong>Support</strong></p>
+                <p>
+                    Email:
+                    <a
+                        class="hover:underline"
+                        href="mailto:sergioorav@gmail.com"
+                        >sergioorav@gmail.com</a
+                    >
+                </p>
+                <p>Phone: +52 55 3574 6547</p>
+            </div>
+            <p class="text-xs text-muted-foreground mt-6">
+                © 2025 WildCards. All rights reserved.
+            </p>
+        </div>
+    </body>
+</html>
